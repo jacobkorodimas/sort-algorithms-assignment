@@ -1,0 +1,50 @@
+SORT ANALYZER RESULTS
+**********************************************************
+BUBBLE SORT - Average Time to Sort Array
+Random Array: 144ms
+Reversed Array: 134ms
+Nearly Sorted Array: 65ms
+Few Unique Array: 65ms
+
+SELECTION SORT - Average Time to Sort Array
+Random Array: 39ms
+Reversed Array: 44ms
+Nearly Sorted Array: 38ms   
+Few Unique Array: 38ms
+
+INSERTION SORT - Average Time to Sort Array
+Random Array: 42ms
+Reversed Array: 83ms
+Nearly Sorted Array: 1.1ms
+Few Unique Array: 0.9ms
+***********************************************************
+
+
+SORT ANALYZER OBSERVATIONS
+***********************************************************
+What did you find interesting about the results?
+The nearly sorted and few unique arrays were very similar times.
+The insertion sort was quicker than the selection sort at few unique values and nearly sorted but not at random arrays.
+The insertion sort was relatively very slow at the reverse array.
+
+The Bubble Sort times should have shown an improved time for the
+Nearly Sorted and Few Unique arrays.  Explain why...
+The Bubble Sort method has to compare values using if statements many times.
+If the number of switches it has to make is minimized(few values to compare or mostly in order),
+then the time it takes will be lower.
+
+The Selection Sort times should have been fairly consistent for 
+all of the data arrays.  Explain why...
+The selection sort loops through each position to put the smallest value in.
+Regardless of the order of the data, the selection sort still has to loop and move each value into its position,
+the only time change being how many values are already where they need to be so no switch needs to be made.
+
+The Insertion Sort times should have been very fast for the
+Nearly Sorted and Few Unique arrays and much worse for the 
+Reversed array.  Explain why...
+The insertion sort is quick at sorting outlier values because searches the sorted list to see where the value goes instead of
+the unsorted list which is bigger. It inserts it instead of swapping it out which requires less comparisons.
+It is slow at the reversed array because it requires the maximum amount of comparisons.
+The reversed data requires the insertion sort to insert each value back at the start one at a time as it gets to it.
+
+************************************************************
